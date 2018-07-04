@@ -1,0 +1,16 @@
+S = [-1, 0, 1, 2, -1, -4]
+
+result=[]
+for i in range(0,len(S)-2):
+    for j in range(i+1,len(S)-1):
+        for k in range(j+1,len(S)):
+            sum=S[i]+S[j]+S[k]
+            if sum==0:
+                temp=[S[i],S[j],S[k]]
+                temp.sort()
+                temp_tuple=(temp[0],temp[1],temp[2])
+                
+                if temp_tuple in result : continue
+                else : result.append(temp_tuple)
+                    
+set(result)
