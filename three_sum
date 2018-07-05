@@ -12,6 +12,8 @@ A solution set is:
 """
 
 
+
+
 def three_sum(array):
     """
     :param array: List[int]
@@ -66,3 +68,5 @@ for i in range(0,len(S)-2):
                 else : result.append(temp_tuple)
                     
 set(result)
+
+
